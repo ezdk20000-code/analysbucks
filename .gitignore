@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+data/raw/
+data/cache/
+data/weather/
+data/ledger.db
+data/manual/fixtures.csv
+data/manual/team_news.csv
+.pytest_cache/

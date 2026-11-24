@@ -206,7 +206,7 @@ with tab_bt:
 
 # ------------------------------------------------------------------ рейтинги
 with tab_tbl:
-    lg3 = st.radio("Лига", ["EPL", "LaLiga"], horizontal=True)
+    lg3 = st.selectbox("Лига ", list(cfg()["leagues"]))
     st.dataframe(service.strength_table(lg3), width="stretch", hide_index=True)
     st.subheader("Честность рынка (калибровка вероятностей без маржи)")
     st.dataframe(service.market_check(), width="stretch")

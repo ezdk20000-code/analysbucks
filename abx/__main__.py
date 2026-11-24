@@ -3,7 +3,7 @@
   update                      скачать данные, рассчитать завершённые ставки
   predict                     прогнозы и рекомендуемые ставки на ближайшие матчи
   match "Arsenal" "Chelsea"   прогноз любой пары по текущим рейтингам
-  table EPL|LaLiga            рейтинги силы команд
+  table EPL|LaLiga|SerieA|... рейтинги силы команд (названия лиг — из config.yaml)
   backtest [--mode both|singles|express] [--since 1213] [--legs 3] [--kelly 0.25]
   deposit 1000 | withdraw 200 открыть/пополнить/вывести банк
   bank                        состояние банка и статистика ставок
@@ -111,7 +111,7 @@ def main(argv=None) -> None:
     sp.add_parser("update")
     sp.add_parser("predict")
     m = sp.add_parser("match"); m.add_argument("home"); m.add_argument("away")
-    t = sp.add_parser("table"); t.add_argument("league", choices=["EPL", "LaLiga"])
+    t = sp.add_parser("table"); t.add_argument("league")
     b = sp.add_parser("backtest")
     b.add_argument("--mode", default="both", choices=["both", "singles", "express"])
     b.add_argument("--since"); b.add_argument("--legs", type=int)

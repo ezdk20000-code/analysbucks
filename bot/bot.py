@@ -16,7 +16,7 @@
   /settle ID won|lost|void     ручной расчёт
   /deposit СУММА, /withdraw СУММА
   /update           обновить данные и рассчитать ставки
-  /table EPL|LaLiga рейтинги
+  /table EPL|LaLiga|SerieA|... рейтинги
   /ucl              прогноз ближайшего тура Лиги чемпионов
 """
 from __future__ import annotations
@@ -187,8 +187,11 @@ def handle(chat_id: int, text: str) -> str:
         from abx import ucl
         return ucl.report_text(ucl.forecast(), html=True)
     if cmd == "/table":
-        lg = arg.strip() or "EPL"
-        t = service.strength_table("LaLiga" if lg.lower().startswith("la") else "EPL")
+        names = {k.lower(): k for k in cfg()["leagues"]}
+        lg = names.get((arg.strip() or "EPL").lower())
+        if lg is None:
+            return "Лиги: " + ", ".join(cfg()["leagues"])
+        t = service.strength_table(lg)
         return "<pre>" + t[["team", "elo", "xG за (vs средний)", "xG против"]].to_string(index=False) + "</pre>"
     return "Не понял команду. /help"
 

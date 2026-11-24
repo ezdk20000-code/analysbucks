@@ -1,0 +1,73 @@
+md,date,home,away
+5,2026-11-24 18:45:00,Bodø/Glimt,LASK
+5,2026-11-24 18:45:00,Galatasaray,Aston Villa
+5,2026-11-24 21:00:00,Arsenal,Borussia Dortmund
+5,2026-11-24 21:00:00,Como,AEK Athens
+5,2026-11-24 21:00:00,Feyenoord,Porto
+5,2026-11-24 21:00:00,Manchester City,Napoli
+5,2026-11-24 21:00:00,Leipzig,Lens
+5,2026-11-24 21:00:00,Real Madrid,PSV Eindhoven
+5,2026-11-24 21:00:00,Slovan Bratislava,Real Betis
+5,2026-11-25 18:45:00,Sabah,Barcelona
+5,2026-11-25 18:45:00,Slavia Praha,Villarreal
+5,2026-11-25 21:00:00,Atlético de Madrid,Viking
+5,2026-11-25 21:00:00,Club Brugge,Liverpool
+5,2026-11-25 21:00:00,Inter,Stuttgart
+5,2026-11-25 21:00:00,Shakhtar Donetsk,Fenerbahçe
+5,2026-11-25 21:00:00,Lille,Bayern München
+5,2026-11-25 21:00:00,Paris Saint-Germain,Roma
+5,2026-11-25 21:00:00,Sporting CP,Manchester United
+6,2026-12-08 18:45:00,Viking,Feyenoord
+6,2026-12-08 18:45:00,Villarreal,Sabah
+6,2026-12-08 21:00:00,AEK Athens,Galatasaray
+6,2026-12-08 21:00:00,Roma,Sporting CP
+6,2026-12-08 21:00:00,Aston Villa,Paris Saint-Germain
+6,2026-12-08 21:00:00,Barcelona,Manchester City
+6,2026-12-08 21:00:00,Bayern München,Slavia Praha
+6,2026-12-08 21:00:00,Manchester United,Leipzig
+6,2026-12-08 21:00:00,Napoli,Club Brugge
+6,2026-12-09 18:45:00,Real Betis,Como
+6,2026-12-09 18:45:00,Slovan Bratislava,Shakhtar Donetsk
+6,2026-12-09 21:00:00,Arsenal,Real Madrid
+6,2026-12-09 21:00:00,Borussia Dortmund,Inter
+6,2026-12-09 21:00:00,LASK,Fenerbahçe
+6,2026-12-09 21:00:00,Liverpool,Porto
+6,2026-12-09 21:00:00,Lens,Bodø/Glimt
+6,2026-12-09 21:00:00,PSV Eindhoven,Atlético de Madrid
+6,2026-12-09 21:00:00,Stuttgart,Lille
+7,2027-01-19 18:45:00,Bodø/Glimt,Atlético de Madrid
+7,2027-01-19 18:45:00,Galatasaray,Feyenoord
+7,2027-01-19 21:00:00,AEK Athens,Roma
+7,2027-01-19 21:00:00,Aston Villa,Borussia Dortmund
+7,2027-01-19 21:00:00,Inter,Liverpool
+7,2027-01-19 21:00:00,Porto,Slavia Praha
+7,2027-01-19 21:00:00,Lille,Slovan Bratislava
+7,2027-01-19 21:00:00,Real Madrid,LASK
+7,2027-01-19 21:00:00,Stuttgart,Club Brugge
+7,2027-01-20 18:45:00,Fenerbahçe,Villarreal
+7,2027-01-20 18:45:00,Sabah,Napoli
+7,2027-01-20 21:00:00,Como,Paris Saint-Germain
+7,2027-01-20 21:00:00,Manchester United,Bayern München
+7,2027-01-20 21:00:00,Leipzig,Shakhtar Donetsk
+7,2027-01-20 21:00:00,Lens,Manchester City
+7,2027-01-20 21:00:00,Real Betis,Arsenal
+7,2027-01-20 21:00:00,Sporting CP,Barcelona
+7,2027-01-20 21:00:00,Viking,PSV Eindhoven
+8,2027-01-27 21:00:00,Arsenal,Sabah
+8,2027-01-27 21:00:00,Roma,Lille
+8,2027-01-27 21:00:00,Atlético de Madrid,Fenerbahçe
+8,2027-01-27 21:00:00,Borussia Dortmund,AEK Athens
+8,2027-01-27 21:00:00,Club Brugge,Bodø/Glimt
+8,2027-01-27 21:00:00,Bayern München,Real Betis
+8,2027-01-27 21:00:00,Barcelona,Como
+8,2027-01-27 21:00:00,Shakhtar Donetsk,Real Madrid
+8,2027-01-27 21:00:00,Feyenoord,Leipzig
+8,2027-01-27 21:00:00,LASK,Porto
+8,2027-01-27 21:00:00,Liverpool,Lens
+8,2027-01-27 21:00:00,Manchester City,Sporting CP
+8,2027-01-27 21:00:00,Paris Saint-Germain,Galatasaray
+8,2027-01-27 21:00:00,PSV Eindhoven,Stuttgart
+8,2027-01-27 21:00:00,Slavia Praha,Aston Villa
+8,2027-01-27 21:00:00,Napoli,Viking
+8,2027-01-27 21:00:00,Villarreal,Manchester United
+8,2027-01-27 21:00:00,Slovan Bratislava,Inter

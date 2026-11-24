@@ -12,6 +12,7 @@
   take N [--stake X] [--real] записать рекомендацию №N из последнего predict
   settle ID won|lost|void     ручной расчёт ставки
   notify                      отправить рекомендации в Telegram
+  ucl [--md 5] [--update]     прогноз тура Лиги чемпионов
 """
 from __future__ import annotations
 
@@ -129,6 +130,7 @@ def main(argv=None) -> None:
     tk.add_argument("--real", action="store_true"); tk.add_argument("--bookmaker")
     st = sp.add_parser("settle"); st.add_argument("id", type=int); st.add_argument("status", choices=["won", "lost", "void"])
     sp.add_parser("notify")
+    u = sp.add_parser("ucl"); u.add_argument("--md", type=int); u.add_argument("--update", action="store_true")
     a = p.parse_args(argv)
 
     if a.cmd == "update":
@@ -165,6 +167,12 @@ def main(argv=None) -> None:
         cmd_take(a)
     elif a.cmd == "settle":
         ledger.settle_bet(a.id, a.status); print("Готово"); _print_dict(ledger.balance())
+    elif a.cmd == "ucl":
+        from . import ucl
+        if a.update:
+            ucl.update_uefa()
+            ucl.update_domestic()
+        print(ucl.report_text(ucl.forecast(a.md)))
     elif a.cmd == "notify":
         from bot.bot import send_recommendations
         send_recommendations()

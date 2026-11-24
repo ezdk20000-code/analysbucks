@@ -17,6 +17,7 @@
   /deposit СУММА, /withdraw СУММА
   /update           обновить данные и рассчитать ставки
   /table EPL|LaLiga рейтинги
+  /ucl              прогноз ближайшего тура Лиги чемпионов
 """
 from __future__ import annotations
 
@@ -182,6 +183,9 @@ def handle(chat_id: int, text: str) -> str:
     if cmd == "/update":
         r = service.update()
         return "Обновлено: " + ", ".join(f"{k} {v}" for k, v in r.items())
+    if cmd == "/ucl":
+        from abx import ucl
+        return ucl.report_text(ucl.forecast(), html=True)
     if cmd == "/table":
         lg = arg.strip() or "EPL"
         t = service.strength_table("LaLiga" if lg.lower().startswith("la") else "EPL")
